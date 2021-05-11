@@ -1446,7 +1446,7 @@ header #weekSelection {
 }
 
 body {
-  background-image: url(Images/spring3.png);
+  background-image: url(/Images/spring3.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -1527,7 +1527,7 @@ body {
 }
 
 .monday {
-  background-image: url(Images/MONDAYbg.png);
+  background-image: url(/Images/MONDAYbg.png);
   background-size: 185px 100%;
   background-repeat: no-repeat;
 }
@@ -1543,7 +1543,7 @@ body {
 }
 
 .tuesday {
-  background-image: url(Images/TUESDAYbg.png);
+  background-image: url(/Images/TUESDAYbg.png);
   background-size: 185px 100%;
   background-repeat: no-repeat;
 }
@@ -1559,7 +1559,7 @@ body {
 }
 
 .wednesday {
-  background-image: url(Images/WEDNESDAYbg.png);
+  background-image: url(/Images/WEDNESDAYbg.png);
   background-size: 185px 100%;
   background-repeat: no-repeat;
 }
@@ -1575,7 +1575,7 @@ body {
 }
 
 .thursday {
-  background-image: url(Images/THURSDAYbg.png);
+  background-image: url(/Images/THURSDAYbg.png);
   background-size: 185px 100%;
   background-repeat: no-repeat;
 }
@@ -1591,7 +1591,7 @@ body {
 }
 
 .friday {
-  background-image: url(Images/FRIDAYbg.png);
+  background-image: url(/Images/FRIDAYbg.png);
   background-size: 185px 100%;
   background-repeat: no-repeat;
 }
@@ -1607,7 +1607,7 @@ body {
 }
 
 .saturday {
-  background-image: url(Images/SATURDAYbg.png);
+  background-image: url(/Images/SATURDAYbg.png);
   background-size: 185px 100%;
   background-repeat: no-repeat;
 }
@@ -1623,7 +1623,7 @@ body {
 }
 
 .sunday {
-  background-image: url(Images/SUNDAYbg.png);
+  background-image: url(/Images/SUNDAYbg.png);
   background-size: 185px 100%;
   background-repeat: no-repeat;
 }

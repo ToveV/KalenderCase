@@ -1,4 +1,3 @@
-
 const today = new Date();
 let currentDay;
 
@@ -17,16 +16,17 @@ const setCalendar = () => {
     currentDay = new Date (monday);
 
     let dates = document.querySelectorAll(".dayDate");
-    dates.forEach(date => {
-        let currentDaySplit = currentDay.toLocaleDateString().split("-");
-        date.textContent = currentDaySplit[2] + "/" + currentDaySplit[1];
-        console.log(currentDay.toLocaleDateString());
-        date.dataset.date = currentDay.toLocaleDateString();
-        currentDay.setHours(+24);
-    }) 
-}
-setCalendar()
 
+    dates.forEach(date => {
+        let currentDaySplit = currentDay.toLocaleDateString();
+        let daySplit = currentDaySplit.split("-");
+        date.textContent = `${daySplit[2]}/${daySplit[1]}`;
+        date.dataset.date = currentDaySplit;
+        currentDay.setHours(+24);
+    });
+}
+
+setCalendar()
 
 
 //get week number
@@ -36,9 +36,9 @@ const getNumberOfWeek = () => {
     return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
 }
 
-const week = document.getElementById("weekSelection");
-week.textContent = "WEEK " + getNumberOfWeek()
 
+const week = document.getElementById("weekSelection");
+week.textContent = "WEEK " + getNumberOfWeek();
 
 
 //get month

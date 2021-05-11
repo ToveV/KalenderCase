@@ -1,16 +1,16 @@
-console.log('boo');
-
 import express from "express";
 import eventController from "./controllers/eventController.js";
-
-import path from "path";
 
 const app = express();
 const PORT = 3008;
 
-app.use(express.urlencoded());
-app.use(express.json());
-app.use(express.static(path.resolve("./KalenderCase")));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json({ extended: false }));
+app.use(express.static('./public'));
+
+app.get('/', (req, res) => {
+    res.sendFile('index.html', { root: './'});
+});
 
 app.get('/events', eventController.getAllEvents);
 

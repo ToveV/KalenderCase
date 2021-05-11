@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
-    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="/css/Main.css">
     <link rel="stylesheet" href="https://use.typekit.net/prx7zfk.css">
     <link rel="stylesheet" href="https://use.typekit.net/prx7zfk.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-
 
     <script src="https://kit.fontawesome.com/716774689c.js" crossorigin="anonymous"></script>
 
@@ -42,8 +41,6 @@
 
 <body>
 
-
-
     <div class="arrowLeft"><i class="fas fa-angle-left fa-4x"></i></div>
     <div class="arrowRight"><i class="fas fa-angle-right fa-4x"></i></div>
 
@@ -62,6 +59,7 @@
                 <div class="dayDate mDate">27/04</div>
                 <div class="contentTitle">MONDAY</div>
                 <div class="titleUnderline" id="MUnderline"></div>
+                <section class="eventSection"></section>
                 <div class="addEventButton">+</div>
             </section>
         </section>
@@ -71,6 +69,7 @@
                 <div class="dayDate tueDate">27/04</div>
                 <div class="contentTitle">TUESDAY</div>
                 <div class="titleUnderline" id="TUEUnderline"></div>
+                <section class="eventSection"></section>
                 <div class="addEventButton">+</div>
 
             </section>
@@ -81,6 +80,7 @@
                 <div class="dayDate wedDate">27/04</div>
                 <div class="contentTitle">WEDNESDAY</div>
                 <div class="titleUnderline" id="WEDUnderline"></div>
+                <section class="eventSection"></section>
                 <div class="addEventButton">+</div>
             </section>
         </section>
@@ -90,6 +90,7 @@
                 <div class="dayDate thuDate">27/04</div>
                 <div class="contentTitle">THURSDAY</div>
                 <div class="titleUnderline" id="THUUnderline"></div>
+                <section class="eventSection"></section>
                 <div class="addEventButton">+</div>
             </section>
         </section>
@@ -99,6 +100,7 @@
                 <div class="dayDate friDate">27/04</div>
                 <div class="contentTitle">FRIDAY</div>
                 <div class="titleUnderline" id="FUnderline"></div>
+                <section class="eventSection"></section>
                 <div class="addEventButton">+</div>
             </section>
         </section>
@@ -108,7 +110,9 @@
                 <div class="dayDate satDate">27/04</div>
                 <div class="contentTitle">SATURDAY</div>
                 <div class="titleUnderline" id="SATUnderline"></div>
+                <section class="eventSection"></section>
                 <div class="addEventButton">+</div>
+
             </section>
         </section>
 
@@ -117,13 +121,14 @@
                 <div class="dayDate sunDate">27/04</div>
                 <div class="contentTitle">SUNDAY</div>
                 <div class="titleUnderline" id="SUNUnderline"></div>
+                <section class="eventSection"></section>
                 <div class="addEventButton">+</div>
             </section>
         </section>
 
     </section>
 
-    <div class="bokehBg">
+    <!-- <div class="bokehBg">
         <div class="background">
             <span></span>
             <span></span>
@@ -146,7 +151,7 @@
             <span></span>
             <span></span>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -155,9 +160,10 @@
         <div id="copyrightText">© Tove Vilson</div>
     </footer>
 
-    <script src="Scripts/Dates.js"></script>
-    <script src="Scripts/addEvents.js"></script>
-    <script src="Scripts/switchWeek.js"></script>
+    <script src="/Scripts/Dates.js"></script>
+    <script src="/Scripts/addEvents.js"></script>
+    <script src="/Scripts/switchWeek.js"></script>
+    <script src="/Scripts/editEvents.js"></script>
 
 </body>
 
