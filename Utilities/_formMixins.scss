@@ -1,0 +1,35 @@
+@mixin placeholder {
+    text-align: center;
+    opacity: 1;
+  }
+
+  @mixin checkbox-before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+  }
+
+  @mixin checkbox-after{
+    content: "";
+    display: block;
+    width: 6px;
+    height: 14px;
+    border: solid;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -4px;
+    left: 6px;
+  }
+
+  @mixin picker-indicator{
+    margin-left: -5px;
+    margin-right: -6px;
+  }

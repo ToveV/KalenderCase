@@ -1,0 +1,210 @@
+@import "colours";
+@import "fonts";
+@import "events";
+@import "formMixins";
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 7px;
+}
+
+.monday {
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    @include placeholder;
+    color: $mondayD;
+  }
+
+  input[type=checkbox]:before {
+    @include checkbox-before;
+    border: 2px solid $mondayD;
+    background-color: $mondayL;
+  }
+
+  input[type=checkbox]:checked:after {
+    @include checkbox-after;
+    border-color: $mondayD;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    @include picker-indicator;
+    filter: invert(39%) sepia(89%) saturate(382%) hue-rotate(334deg) brightness(93%) contrast(88%);
+  }
+}
+
+.tuesday {
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    @include placeholder;
+    color: $tuesdayD;
+  }
+
+  input[type=checkbox]:before {
+    @include checkbox-before;
+    border: 2px solid $tuesdayD;
+    background-color: $tuesdayL;
+  }
+
+
+  input[type=checkbox]:checked:after {
+    @include checkbox-after;
+    border-color: $tuesdayD;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    @include picker-indicator;
+    filter: invert(50%) sepia(10%) saturate(1586%) hue-rotate(304deg) brightness(99%) contrast(103%);
+  }
+}
+
+.wednesday {
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    @include placeholder;
+    color: $wednesdayD;
+  }
+
+  input[type=checkbox]:before {
+    @include checkbox-before;
+    border: 2px solid $wednesdayD;
+    background-color: $wednesdayL;
+  }
+
+
+  input[type=checkbox]:checked:after {
+    @include checkbox-after;
+    border-color: $wednesdayD;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    @include picker-indicator;
+    filter: invert(38%) sepia(6%) saturate(3710%) hue-rotate(347deg) brightness(99%) contrast(88%);
+  }
+}
+
+.thursday {
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    @include placeholder;
+    color: $thursdayD;
+  }
+
+  input[type=checkbox]:before {
+    @include checkbox-before;
+    border: 2px solid $thursdayD;
+    background-color: $thursdayL;
+  }
+
+
+  input[type=checkbox]:checked:after {
+    @include checkbox-after;
+    border-color: $thursdayD;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    @include picker-indicator;
+    filter: invert(63%) sepia(11%) saturate(1916%) hue-rotate(359deg) brightness(93%) contrast(84%);
+  }
+}
+
+.friday {
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    @include placeholder;
+    color: $fridayD;
+  }
+
+  input[type=checkbox]:before {
+    @include checkbox-before;
+    border: 2px solid $fridayD;
+    background-color: $fridayL;
+  }
+
+
+  input[type=checkbox]:checked:after {
+    @include checkbox-after;
+    border-color: $fridayD;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    @include picker-indicator;
+    filter: invert(46%) sepia(8%) saturate(1131%) hue-rotate(158deg) brightness(94%) contrast(95%);
+  }
+}
+
+.saturday {
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    @include placeholder;
+    color: $saturdayD;
+  }
+
+  input[type=checkbox]:before {
+    @include checkbox-before;
+    border: 2px solid $saturdayD;
+    background-color: $saturdayL;
+  }
+
+
+  input[type=checkbox]:checked:after {
+    @include checkbox-after;
+    border-color: $saturdayD;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    @include picker-indicator;
+    filter: invert(39%) sepia(7%) saturate(2378%) hue-rotate(347deg) brightness(94%) contrast(94%);
+  }
+}
+
+.sunday {
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    @include placeholder;
+    color: $sundayD;
+  }
+
+  input[type=checkbox]:before {
+    @include checkbox-before;
+    border: 2px solid $sundayD;
+    background-color: $sundayL;
+  }
+
+
+  input[type=checkbox]:checked:after {
+    @include checkbox-after;
+    border-color: $sundayD;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    @include picker-indicator;
+    filter: invert(42%) sepia(1%) saturate(2732%) hue-rotate(333deg) brightness(94%) contrast(76%);
+  }
+}

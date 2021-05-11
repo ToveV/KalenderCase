@@ -1,0 +1,281 @@
+@import "utilities/colours";
+@import "utilities/fonts";
+@import "utilities/events";
+@import "utilities/addevents";
+// @import "utilities/bokehBg";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 10;
+    font-family: $defaultFont;
+    font-weight: $normal;
+    font-style: $styleNormal;
+    background-color: white;
+    height: 70px;
+    outline: 10px solid #DBF8FB;
+
+    #title {
+        color: $titlecolor;
+        font-size: 60px;
+        margin-left: 100px;
+        margin-bottom: -8px;
+
+        &:hover{
+            cursor: pointer;
+            color: $weekcolor;
+        }
+    }
+
+    #yearMonth {
+        color: $monthcolor;
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    #weekSelection {
+        color: $weekcolor;
+        font-size: 25px;
+        margin-left: auto;
+        margin-bottom: 2px;
+        margin-right: 8vw;
+    }
+}
+
+
+
+.arrowLeft {
+    margin-top: 50vh;
+    position: absolute;
+    margin-left: 2vw;
+    color: #ffe77b;
+
+    &:hover {
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.arrowRight {
+    margin-top: 50vh;
+    position: absolute;
+    margin-left: 95.7vw;
+    color: #ffe77b;
+
+    &:hover {
+        color: white;
+        cursor: pointer;
+    }
+}
+
+body {
+    background-image: url(Images/spring3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-color: #BCDCDF;
+}
+
+#days {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4vh 4vw 4vh 4vw;
+}
+
+.weekday {
+    width: 185px;
+    height: 590px;
+
+    .contentTitle {
+        width: fit-content;
+        margin: auto;
+        font-family: $defaultFont;
+        font-weight: $normal;
+        font-style: $normal;
+        font-size: 120%;
+    }
+
+    .content {
+        margin-top: 115px;
+        margin-left: 16px;
+        border-radius: 4rem;
+        width: 145px;
+        height: 420px;
+    }
+}
+
+.dayDate {
+    width: fit-content;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    font-family: $readFont;
+    font-weight: $normal;
+    font-style: $normal;
+    font-size: 80%;
+}
+
+.titleUnderline {
+    width: 90%;
+    height: 0.5%;
+    margin-left: 5%;
+}
+
+.addEventButton {
+    width: fit-content;
+    margin: auto;
+    padding-top: 5%;
+    font-family: $defaultFont;
+    font-weight: $normal;
+    font-style: $normal;
+    font-size: 150%;
+
+    &:hover {
+        filter: brightness(150%);
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+.monday {
+    background-image: url(Images/MONDAYbg.png);
+    background-size: 185px 100%;
+    background-repeat: no-repeat;
+
+
+    .mondayContent {
+        background-color: $mondayL;
+        border: 5px solid $mondayN;
+        color: $mondayD;
+
+    }
+
+    #MUnderline {
+        background-color: $mondayD;
+    }
+
+}
+
+.tuesday {
+    background-image: url(Images/TUESDAYbg.png);
+    background-size: 185px 100%;
+    background-repeat: no-repeat;
+
+    .tuesdayContent {
+        background-color: $tuesdayL;
+        border: 5px solid $tuesdayN;
+        color: $tuesdayD;
+    }
+
+    #TUEUnderline {
+        background-color: $tuesdayD;
+    }
+}
+
+.wednesday {
+    background-image: url(Images/WEDNESDAYbg.png);
+    background-size: 185px 100%;
+    background-repeat: no-repeat;
+
+    .wednesdayContent {
+        background-color: $wednesdayL;
+        border: 5px solid $wednesdayN;
+        color: $wednesdayD;
+    }
+
+    #WEDUnderline {
+        background-color: $wednesdayD;
+    }
+}
+
+.thursday {
+    background-image: url(Images/THURSDAYbg.png);
+    background-size: 185px 100%;
+    background-repeat: no-repeat;
+
+    .thursdayContent {
+        background-color: $thursdayL;
+        border: 5px solid $thursdayN;
+        color: $thursdayD;
+    }
+
+    #THUUnderline {
+        background-color: $thursdayD;
+    }
+}
+
+.friday {
+    background-image: url(Images/FRIDAYbg.png);
+    background-size: 185px 100%;
+    background-repeat: no-repeat;
+
+    .fridayContent {
+        background-color: $fridayL;
+        border: 5px solid $fridayN;
+        color: $fridayD;
+    }
+
+    #FUnderline {
+        background-color: $fridayD;
+    }
+}
+
+.saturday {
+    background-image: url(Images/SATURDAYbg.png);
+    background-size: 185px 100%;
+    background-repeat: no-repeat;
+
+    .saturdayContent {
+        background-color: $saturdayL;
+        border: 5px solid $saturdayN;
+        color: $saturdayD;
+    }
+
+    #SATUnderline {
+        background-color: $saturdayD;
+    }
+}
+
+.sunday {
+    background-image: url(Images/SUNDAYbg.png);
+    background-size: 185px 100%;
+    background-repeat: no-repeat;
+
+    .sundayContent {
+        background-color: $sundayL;
+        border: 5px solid $sundayN;
+        color: $sundayD;
+    }
+
+    #SUNUnderline {
+        background-color: $sundayD;
+    }
+}
+
+footer {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    font-family: $readFont;
+    font-weight: $latoWeight;
+    color: $titlecolor;
+
+    #copyrightText {
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+}

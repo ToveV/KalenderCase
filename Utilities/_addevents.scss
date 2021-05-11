@@ -1,0 +1,413 @@
+@import "colours";
+@import "fonts";
+@import "events";
+@import "formStyling";
+@import "addEventsMixins";
+
+.addEvent {
+    font-family: $readFont;
+    font-weight: $normal;
+    margin-top: 12px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.addIcon {
+    margin-top: 5%;
+}
+
+.iconSelection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -3px;
+
+    img {
+        width: 20px;
+        padding: 0 3px 0 5px;
+    }
+
+    .iconCheckbox {
+        margin-top: 4%;
+        border: 2px solid;
+        border-radius: 5px;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.monday {
+
+    .addTitle2 {
+        @include title2;
+        border-color: $mondayD;
+        color: $mondayD;
+    }
+
+    .starttime {
+        display: flex;
+        padding-bottom: 4%;
+        font-size: 15px;
+
+        .addstarttime {
+            @include starttime;
+            border-color: $mondayD;
+            color: $mondayD;
+        }
+    }
+
+    .endtime {
+        display: flex;
+        padding-bottom: 8%;
+        font-size: 15px;
+
+        .addendtime {
+            @include endtime;
+            border-color: $mondayD;
+            color: $mondayD;
+        }
+    }
+
+    .addDescription {
+        @include addDescription;
+        border-color: $mondayD;
+        color: $mondayD;
+    }
+
+    .saveEventButton {
+        @include saveEventBtn;
+        background-color: $mondayD;
+        border: 2px solid $mondayN;
+
+        &:hover {
+            @include hoverBright;
+        }
+    }
+
+    img {
+        filter: invert(44%) sepia(14%) saturate(2002%) hue-rotate(333deg) brightness(96%) contrast(91%); 
+    }
+
+}
+
+.tuesday {
+
+    .addTitle2 {
+        @include title2;
+        border-color: $tuesdayD;
+        color: $tuesdayD;
+    }
+
+    .starttime {
+        display: flex;
+        padding-bottom: 4%;
+        font-size: 15px;
+
+        .addstarttime {
+            @include starttime;
+            border-color: $tuesdayD;
+            color: $tuesdayD;
+        }
+    }
+
+    .endtime {
+        display: flex;
+        padding-bottom: 8%;
+        font-size: 15px;
+
+        .addendtime {
+            @include endtime;
+            border-color: $tuesdayD;
+            color: $tuesdayD;
+        }
+    }
+
+    .addDescription {
+        @include addDescription;
+        border-color: $tuesdayD;
+        color: $tuesdayD;
+    }
+
+    .saveEventButton {
+        @include saveEventBtn;
+        background-color: $tuesdayD;
+        border: 2px solid $tuesdayN;
+
+        &:hover {
+            @include hoverBright;
+        }
+    }
+    img {
+        filter: invert(46%) sepia(4%) saturate(3948%) hue-rotate(303deg) brightness(109%) contrast(103%);
+    }
+
+}
+
+.wednesday {
+
+    .addTitle2 {
+        @include title2;
+        border-color: $wednesdayD;
+        color: $wednesdayD;
+    }
+
+    .starttime {
+        display: flex;
+        padding-bottom: 4%;
+        font-size: 15px;
+
+        .addstarttime {
+            @include starttime;
+            border-color: $wednesdayD;
+            color: $wednesdayD;
+        }
+    }
+
+    .endtime {
+        display: flex;
+        padding-bottom: 8%;
+        font-size: 15px;
+
+        .addendtime {
+            @include endtime;
+            border-color: $wednesdayD;
+            color: $wednesdayD;
+        }
+    }
+
+    .addDescription {
+        @include addDescription;
+        border-color: $wednesdayD;
+        color: $wednesdayD;
+    }
+
+    .saveEventButton {
+        @include saveEventBtn;
+        background-color: $wednesdayD;
+        border: 2px solid $wednesdayN;
+
+        &:hover {
+            @include hoverBright;
+        }
+    }
+
+    img {
+        filter: invert(36%) sepia(55%) saturate(462%) hue-rotate(347deg) brightness(96%) contrast(85%);
+    }
+
+}
+
+.thursday {
+
+    .addTitle2 {
+        @include title2;
+        border-color: $thursdayD;
+        color: $thursdayD;
+    }
+
+    .starttime {
+        display: flex;
+        padding-bottom: 4%;
+        font-size: 15px;
+
+        .addstarttime {
+            @include starttime;
+            border-color: $thursdayD;
+            color: $thursdayD;
+        }
+    }
+
+    .endtime {
+        display: flex;
+        padding-bottom: 8%;
+        font-size: 15px;
+
+        .addendtime {
+            @include endtime;
+            border-color: $thursdayD;
+            color: $thursdayD;
+        }
+    }
+
+    .addDescription {
+        @include addDescription;
+        border-color: $thursdayD;
+        color: $thursdayD;
+    }
+
+    .saveEventButton {
+        @include saveEventBtn;
+        background-color: $thursdayD;
+        border: 2px solid $thursdayN;
+
+        &:hover {
+            @include hoverBright;
+        }
+    }
+
+    img {
+        filter: invert(55%) sepia(74%) saturate(302%) hue-rotate(359deg) brightness(93%) contrast(92%);
+    }
+
+}
+
+.friday {
+
+    .addTitle2 {
+        @include title2;
+        border-color: $fridayD;
+        color: $fridayD;
+    }
+
+    .starttime {
+        display: flex;
+        padding-bottom: 4%;
+        font-size: 15px;
+
+        .addstarttime {
+            @include starttime;
+            border-color: $fridayD;
+            color: $fridayD;
+        }
+    }
+
+    .endtime {
+        display: flex;
+        padding-bottom: 8%;
+        font-size: 15px;
+
+        .addendtime {
+            @include endtime;
+            border-color: $fridayD;
+            color: $fridayD;
+        }
+    }
+
+    .addDescription {
+        @include addDescription;
+        border-color: $fridayD;
+        color: $fridayD;
+    }
+
+    .saveEventButton {
+        @include saveEventBtn;
+        background-color: $fridayD;
+        border: 2px solid $fridayN;
+
+        &:hover {
+            @include hoverBright;
+        }
+    }
+
+    img {
+        filter: invert(44%) sepia(13%) saturate(705%) hue-rotate(158deg) brightness(95%) contrast(92%);
+    }
+
+}
+
+.saturday {
+
+    .addTitle2 {
+        @include title2;
+        border-color: $saturdayD;
+        color: $saturdayD;
+    }
+
+    .starttime {
+        display: flex;
+        padding-bottom: 4%;
+        font-size: 15px;
+
+        .addstarttime {
+            @include starttime;
+            border-color: $saturdayD;
+            color: $saturdayD;
+        }
+    }
+
+    .endtime {
+        display: flex;
+        padding-bottom: 8%;
+        font-size: 15px;
+
+        .addendtime {
+            @include endtime;
+            border-color: $saturdayD;
+            color: $saturdayD;
+        }
+    }
+
+    .addDescription {
+        @include addDescription;
+        border-color: $saturdayD;
+        color: $saturdayD;
+    }
+
+    .saveEventButton {
+        @include saveEventBtn;
+        background-color: $saturdayD;
+        border: 2px solid $saturdayN;
+
+        &:hover {
+            @include hoverBright;
+        }
+    }
+
+    img{
+        filter: invert(39%) sepia(18%) saturate(900%) hue-rotate(347deg) brightness(93%) contrast(95%);
+    }
+
+}
+
+.sunday {
+
+    .addTitle2 {
+        @include title2;
+        border-color: $sundayD;
+        color: $sundayD;
+    }
+
+    .starttime {
+        display: flex;
+        padding-bottom: 4%;
+        font-size: 15px;
+
+        .addstarttime {
+            @include starttime;
+            border-color: $sundayD;
+            color: $sundayD;
+        }
+    }
+
+    .endtime {
+        display: flex;
+        padding-bottom: 8%;
+        font-size: 15px;
+
+        .addendtime {
+            @include endtime;
+            border-color: $sundayD;
+            color: $sundayD;
+        }
+    }
+
+    .addDescription {
+        @include addDescription;
+        border-color: $sundayD;
+        color: $sundayD;
+    }
+
+    .saveEventButton {
+        @include saveEventBtn;
+        background-color: $sundayD;
+        border: 2px solid $sundayN;
+
+        &:hover {
+            @include hoverBright;
+        }
+    }
+
+    img{
+        filter: invert(44%) sepia(8%) saturate(403%) hue-rotate(333deg) brightness(93%) contrast(87%);
+    }
+
+}
