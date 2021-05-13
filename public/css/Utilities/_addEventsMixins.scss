@@ -59,3 +59,11 @@
     filter: brightness(115%) saturate(80%);
     cursor: pointer;
 }
+
+@mixin deleteButton {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 90%;
+        margin-top: 3px;
+}

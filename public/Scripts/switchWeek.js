@@ -28,6 +28,7 @@ const switchWeek = (c) => {
     let dates = document.querySelectorAll(".dayDate");
 
     for (let i = 0; i < dates.length; i++) {
+        dates[i].dataset.date = days[i].toLocaleDateString();
         console.log(days[i].toLocaleDateString());
         let daySplit = days[i].toLocaleDateString().split("-");
         dates[i].textContent = `${daySplit[2]}/${daySplit[1]}`;
@@ -56,7 +57,17 @@ const getDateOfWeek = (w, y, offset) =>
 document.querySelector(".arrowLeft")
 .addEventListener("click", () => {
     switchWeek(counter - 1)
+    document.querySelectorAll(".eventSection").forEach(sec => {
+        sec.innerHTML = "";
+    })
+    getEvents();
 });
 
 document.querySelector(".arrowRight")
-.addEventListener("click", () => switchWeek(counter + 1));
+.addEventListener("click", () => {
+    switchWeek(counter + 1)
+    document.querySelectorAll(".eventSection").forEach(sec => {
+        sec.innerHTML = "";
+    })
+    getEvents();
+});

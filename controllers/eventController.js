@@ -1,6 +1,5 @@
 import eventModel from '../models/eventModels.js';
 const getAllEvents = (req, res) => {
-    console.log(req);
     const events = eventModel.findAllEvents();
     res.send({
         data: events
@@ -12,7 +11,7 @@ const updateEvent = (req, res) => {
     const { body } = req;
     const success = eventModel.updateEventById(id, body);
     if (success) {
-        res.redirect('path');
+        res.redirect('/');
     }
     else {
         res.status(400).json({
@@ -24,7 +23,7 @@ const removeEventById = (req, res) => {
     const id = req.params.id;
     eventModel.deleteEventById(parseInt(id));
     console.log(id, "ok");
-    res.redirect('path');
+    res.redirect('/');
 }
 const getEventById = (req, res) => {
     const id = req.params.id;
@@ -45,9 +44,7 @@ const createEvent = (req, res) => {
     const body = req.body;
     const success = eventModel.createEvent(body);
     if (success) {
-        res.status(201).json({
-            message: 'event created'
-        })
+        res.redirect('/');
     }
     else {
         res.status(400).json({

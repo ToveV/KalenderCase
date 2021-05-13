@@ -7,13 +7,13 @@
 .event .time {
   font-family: lato, sans-serif;
   font-weight: 900;
-  font-size: 70%;
+  font-size: 80%;
 }
 
 .event .icon img {
   width: 20px;
   position: absolute;
-  margin-top: -13px;
+  margin-top: -15px;
   margin-left: 108px;
 }
 
@@ -26,6 +26,7 @@
 .event .eventTitle:hover {
   -webkit-filter: brightness(150%);
           filter: brightness(150%);
+  cursor: pointer;
 }
 
 .event .description {
@@ -67,6 +68,21 @@
 
 .sunday .eventUnderline {
   background-color: #746B67;
+}
+
+.editEventButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 16px;
+  margin-left: 60px;
+  margin-bottom: 5px;
+}
+
+.editEventButton .fa-pencil-alt:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  cursor: pointer;
 }
 
 .event {
@@ -78,13 +94,13 @@
 .event .time {
   font-family: lato, sans-serif;
   font-weight: 900;
-  font-size: 70%;
+  font-size: 80%;
 }
 
 .event .icon img {
   width: 20px;
   position: absolute;
-  margin-top: -13px;
+  margin-top: -15px;
   margin-left: 108px;
 }
 
@@ -97,6 +113,7 @@
 .event .eventTitle:hover {
   -webkit-filter: brightness(150%);
           filter: brightness(150%);
+  cursor: pointer;
 }
 
 .event .description {
@@ -138,6 +155,21 @@
 
 .sunday .eventUnderline {
   background-color: #746B67;
+}
+
+.editEventButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 16px;
+  margin-left: 60px;
+  margin-bottom: 5px;
+}
+
+.editEventButton .fa-pencil-alt:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  cursor: pointer;
 }
 
 .event {
@@ -149,13 +181,13 @@
 .event .time {
   font-family: lato, sans-serif;
   font-weight: 900;
-  font-size: 70%;
+  font-size: 80%;
 }
 
 .event .icon img {
   width: 20px;
   position: absolute;
-  margin-top: -13px;
+  margin-top: -15px;
   margin-left: 108px;
 }
 
@@ -168,6 +200,7 @@
 .event .eventTitle:hover {
   -webkit-filter: brightness(150%);
           filter: brightness(150%);
+  cursor: pointer;
 }
 
 .event .description {
@@ -209,6 +242,21 @@
 
 .sunday .eventUnderline {
   background-color: #746B67;
+}
+
+.editEventButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 16px;
+  margin-left: 60px;
+  margin-bottom: 5px;
+}
+
+.editEventButton .fa-pencil-alt:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  cursor: pointer;
 }
 
 textarea:focus,
@@ -800,6 +848,21 @@ input[type=submit] {
   cursor: pointer;
 }
 
+.monday .deleteButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 90%;
+  margin-top: 3px;
+  color: #B4603B;
+}
+
 .monday img {
   -webkit-filter: invert(44%) sepia(14%) saturate(2002%) hue-rotate(333deg) brightness(96%) contrast(91%);
           filter: invert(44%) sepia(14%) saturate(2002%) hue-rotate(333deg) brightness(96%) contrast(91%);
@@ -892,6 +955,21 @@ input[type=submit] {
   -webkit-filter: brightness(115%) saturate(80%);
           filter: brightness(115%) saturate(80%);
   cursor: pointer;
+}
+
+.tuesday .deleteButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 90%;
+  margin-top: 3px;
+  color: #BE7079;
 }
 
 .tuesday img {
@@ -988,6 +1066,21 @@ input[type=submit] {
   cursor: pointer;
 }
 
+.wednesday .deleteButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 90%;
+  margin-top: 3px;
+  color: #8B6039;
+}
+
 .wednesday img {
   -webkit-filter: invert(36%) sepia(55%) saturate(462%) hue-rotate(347deg) brightness(96%) contrast(85%);
           filter: invert(36%) sepia(55%) saturate(462%) hue-rotate(347deg) brightness(96%) contrast(85%);
@@ -1080,6 +1173,21 @@ input[type=submit] {
   -webkit-filter: brightness(115%) saturate(80%);
           filter: brightness(115%) saturate(80%);
   cursor: pointer;
+}
+
+.thursday .deleteButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 90%;
+  margin-top: 3px;
+  color: #BB924B;
 }
 
 .thursday img {
@@ -1176,6 +1284,21 @@ input[type=submit] {
   cursor: pointer;
 }
 
+.friday .deleteButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 90%;
+  margin-top: 3px;
+  color: #5B7584;
+}
+
 .friday img {
   -webkit-filter: invert(44%) sepia(13%) saturate(705%) hue-rotate(158deg) brightness(95%) contrast(92%);
           filter: invert(44%) sepia(13%) saturate(705%) hue-rotate(158deg) brightness(95%) contrast(92%);
@@ -1270,6 +1393,21 @@ input[type=submit] {
   cursor: pointer;
 }
 
+.saturday .deleteButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 90%;
+  margin-top: 3px;
+  color: #7D5C3E;
+}
+
 .saturday img {
   -webkit-filter: invert(39%) sepia(18%) saturate(900%) hue-rotate(347deg) brightness(93%) contrast(95%);
           filter: invert(39%) sepia(18%) saturate(900%) hue-rotate(347deg) brightness(93%) contrast(95%);
@@ -1362,6 +1500,21 @@ input[type=submit] {
   -webkit-filter: brightness(115%) saturate(80%);
           filter: brightness(115%) saturate(80%);
   cursor: pointer;
+}
+
+.sunday .deleteButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 90%;
+  margin-top: 3px;
+  color: #746B67;
 }
 
 .sunday img {

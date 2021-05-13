@@ -83,6 +83,11 @@
         }
     }
 
+    .deleteButton {
+        @include deleteButton;
+        color: $mondayD;
+    }
+
     img {
         filter: invert(44%) sepia(14%) saturate(2002%) hue-rotate(333deg) brightness(96%) contrast(91%); 
     }
@@ -136,6 +141,11 @@
             @include hoverBright;
         }
     }
+
+    .deleteButton {
+        @include deleteButton;
+        color: $tuesdayD;
+    }
     img {
         filter: invert(46%) sepia(4%) saturate(3948%) hue-rotate(303deg) brightness(109%) contrast(103%);
     }
@@ -188,6 +198,11 @@
         &:hover {
             @include hoverBright;
         }
+    }
+
+    .deleteButton {
+        @include deleteButton;
+        color: $wednesdayD;
     }
 
     img {
@@ -244,6 +259,11 @@
         }
     }
 
+    .deleteButton {
+        @include deleteButton;
+        color: $thursdayD;
+    }
+
     img {
         filter: invert(55%) sepia(74%) saturate(302%) hue-rotate(359deg) brightness(93%) contrast(92%);
     }
@@ -296,6 +316,11 @@
         &:hover {
             @include hoverBright;
         }
+    }
+
+    .deleteButton {
+        @include deleteButton;
+        color: $fridayD;
     }
 
     img {
@@ -352,6 +377,11 @@
         }
     }
 
+    .deleteButton {
+        @include deleteButton;
+        color: $saturdayD;
+    }
+
     img{
         filter: invert(39%) sepia(18%) saturate(900%) hue-rotate(347deg) brightness(93%) contrast(95%);
     }
@@ -406,8 +436,14 @@
         }
     }
 
+    .deleteButton {
+        @include deleteButton;
+        color: $sundayD;
+    }
+
     img{
         filter: invert(44%) sepia(8%) saturate(403%) hue-rotate(333deg) brightness(93%) contrast(87%);
     }
 
 }
+

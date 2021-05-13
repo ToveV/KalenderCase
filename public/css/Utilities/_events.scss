@@ -9,14 +9,14 @@
     .time {
         font-family: $readFont;
         font-weight: $normal;
-        font-size: 70%;
+        font-size: 80%;
     }
 
     .icon {
         img {
             width: 20px;
             position: absolute;
-            margin-top: -13px;
+            margin-top: -15px;
             margin-left: 108px;
         }
 
@@ -29,6 +29,7 @@
 
         &:hover {
             filter: brightness(150%);
+            cursor: pointer;
         }
     }
 
@@ -92,5 +93,17 @@
 
     .eventUnderline {
         background-color: $sundayD;
+    }
+}
+
+.editEventButton {
+    display: flex;
+    width: 16px;
+    margin-left: 60px;
+    margin-bottom: 5px;
+
+    .fa-pencil-alt:hover{
+        filter: brightness(120%);
+        cursor: pointer;
     }
 }
